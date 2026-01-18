@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TheNightL_ • Univers Gaming & Créatif</title>
+  <style>
+    :root {
+      --bg: #0b0f1a;
+      --card: #12182b;
+      --primary: #4da3ff;
+      --secondary: #ffd34d;
+      --text: #e8ecf3;
+      --muted: #9aa4c7;
+      --accent: linear-gradient(135deg, #4da3ff, #ffd34d);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: radial-gradient(1200px 600px at 10% -10%, #1a2352, transparent 60%),
+                  radial-gradient(800px 400px at 90% 10%, #3a2a6a, transparent 60%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 80px 20px 60px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #4da3ff, #ffd34d);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+    }
+
+    header p {
+      max-width: 720px;
+      margin: 0 auto 32px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .cta {
+      display: inline-flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn {
+      padding: 12px 22px;
+      border-radius: 999px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #0b0f1a;
+      box-shadow: 0 10px 30px rgba(77,163,255,0.25);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 40px rgba(0,0,0,0.35);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 80px;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+
+    section > p {
+      color: var(--muted);
+      max-width: 700px;
+      margin-bottom: 28px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 18px;
+      padding: 24px;
+      backdrop-filter: blur(6px);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(77,163,255,0.4);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      background: rgba(77,163,255,0.15);
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .about-box {
+      background: var(--card);
+      border-radius: 20px;
+      padding: 28px;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .about-box ul {
+      margin-top: 14px;
+      padding-left: 18px;
+      color: var(--muted);
+    }
+
+    .about-box li { margin-bottom: 8px; }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px 60px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    footer span {
+      background: linear-gradient(135deg, #4da3ff, #ffd34d);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      .about { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>TheNightL</h1>
+    <p>
+      Un univers gaming & créatif où la passion, la progression et la bonne ambiance passent avant tout.
+      Ici, on parle jeux vidéo, animé, évolution personnelle et projets faits avec le cœur.
+    </p>
+    <div class="cta">
+      <a href="#projets" class="btn btn-primary">Découvrir les projets</a>
+      <a href="#a-propos" class="btn btn-secondary">À propos</a>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="projets">
+      <h2>Projets & contenus</h2>
+      <p>
+        Des idées en construction, des formats en test et une envie constante de créer quelque chose de sincère.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <span class="tag">Gaming</span>
+          <h3>Découverte & exploration</h3>
+          <p>
+            Des jeux où la liberté prime, l'exploration est reine et chaque partie raconte une histoire différente.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="tag">Animé</span>
+          <h3>Évolution & narration</h3>
+          <p>
+            Des œuvres centrées sur la progression du personnage, le dépassement de soi et la montée en puissance.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="tag">Communauté</span>
+          <h3>Respect & partage</h3>
+          <p>
+            Créer un espace sain, bienveillant, où chacun peut échanger sans pression ni jugement.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="a-propos">
+      <h2>À propos du projet</h2>
+      <p>
+        Ce site représente une base. Pas une finalité, mais un point de départ.
+      </p>
+
+      <div class="about">
+        <div class="about-box">
+          <h3>Pourquoi ce projet ?</h3>
+          <p>
+            Parce que créer permet de transformer les doutes en énergie, et les idées en quelque chose de concret.
+            L'objectif n'est pas d'aller vite, mais d'aller loin.
+          </p>
+          <ul>
+            <li>Avancer à son rythme</li>
+            <li>Rester authentique</li>
+            <li>Construire sur le long terme</li>
+          </ul>
+        </div>
+
+        <div class="about-box">
+          <h3>La suite ?</h3>
+          <p>
+            Ce site peut évoluer : ajout d'un blog, d'une page Twitch, d'un portfolio ou d'un espace communautaire.
+          </p>
+          <ul>
+            <li>Nouveaux formats</li>
+            <li>Identité visuelle renforcée</li>
+            <li>Projets collaboratifs</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 • <span>TheNightL_</span> — Créé avec passion et patience.
+  </footer>
+
+</body>
+</html>
